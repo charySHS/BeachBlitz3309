@@ -30,7 +30,7 @@ public enum FBLogger
         return INSTANCE;
     }
 
-    public <T> StatusSignal<T> moniterStatusSignal
+    public <T> StatusSignal<T> monitorStatusSignal
         (
             StatusSignal<T> signal,
             int canDeviceID,

@@ -26,7 +26,7 @@ public class MonitoredCANCoder extends CANcoder {
     @Override
     public StatusSignal<Double> getAbsolutePosition() {
         return FBLogger.getInstance()
-                       .moniterStatusSignal(
+                       .monitorStatusSignal(
                            super.getAbsolutePosition(),
                            canDeviceID,
                            canDeviceBus,

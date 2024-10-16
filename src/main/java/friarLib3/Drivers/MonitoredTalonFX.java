@@ -27,7 +27,7 @@ public class MonitoredTalonFX extends TalonFX {
     @Override
     public StatusSignal<Double> getMotorVoltage() {
         return FBLogger.getInstance()
-                       .moniterStatusSignal(
+                       .monitorStatusSignal(
                            super.getMotorVoltage(),
                            canDeviceID,
                            canDeviceBus,
@@ -38,7 +38,7 @@ public class MonitoredTalonFX extends TalonFX {
     @Override
     public StatusSignal<Double> getRotorVelocity() {
         return FBLogger.getInstance()
-                       .moniterStatusSignal(
+                       .monitorStatusSignal(
                            super.getRotorVelocity(),
                            canDeviceID,
                            canDeviceBus,
@@ -49,7 +49,7 @@ public class MonitoredTalonFX extends TalonFX {
     @Override
     public StatusSignal<Double> getRotorPosition() {
         return FBLogger.getInstance()
-                       .moniterStatusSignal(
+                       .monitorStatusSignal(
                            super.getRotorPosition(),
                            canDeviceID,
                            canDeviceBus,
@@ -60,7 +60,7 @@ public class MonitoredTalonFX extends TalonFX {
     @Override
     public StatusSignal<Double> getStatorCurrent() {
         return FBLogger.getInstance()
-                       .moniterStatusSignal(
+                       .monitorStatusSignal(
                            super.getStatorCurrent(),
                            canDeviceID,
                            canDeviceBus,
@@ -71,7 +71,7 @@ public class MonitoredTalonFX extends TalonFX {
     @Override
     public StatusSignal<Double> getVelocity() {
         return FBLogger.getInstance()
-                       .moniterStatusSignal(
+                       .monitorStatusSignal(
                            super.getVelocity(),
                            canDeviceID,
                            canDeviceBus,
@@ -82,7 +82,7 @@ public class MonitoredTalonFX extends TalonFX {
     @Override
     public StatusSignal<Double> getSupplyCurrent() {
         return FBLogger.getInstance()
-                       .moniterStatusSignal(
+                       .monitorStatusSignal(
                            super.getSupplyCurrent(),
                            canDeviceID,
                            canDeviceBus,
@@ -93,7 +93,7 @@ public class MonitoredTalonFX extends TalonFX {
     @Override
     public StatusSignal<Double> getPosition() {
         return FBLogger.getInstance()
-                       .moniterStatusSignal(
+                       .monitorStatusSignal(
                            super.getPosition(),
                            canDeviceID,
                            canDeviceBus,
@@ -104,7 +104,7 @@ public class MonitoredTalonFX extends TalonFX {
     @Override
     public StatusSignal<ControlModeValue> getControlMode() {
         return FBLogger.getInstance()
-                       .moniterStatusSignal(
+                       .monitorStatusSignal(
                            super.getControlMode(),
                            canDeviceID,
                            canDeviceBus,
