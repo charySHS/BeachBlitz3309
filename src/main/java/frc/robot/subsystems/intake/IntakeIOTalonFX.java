@@ -2,10 +2,7 @@ package frc.robot.subsystems.intake;
 
 import com.ctre.phoenix6.BaseStatusSignal;
 import com.ctre.phoenix6.StatusSignal;
-import com.ctre.phoenix6.controls.MotionMagicVelocityVoltage;
-import com.ctre.phoenix6.controls.NeutralOut;
-import com.ctre.phoenix6.controls.VelocityVoltage;
-import com.ctre.phoenix6.controls.VoltageOut;
+import com.ctre.phoenix6.controls.*;
 import com.ctre.phoenix6.hardware.TalonFX;
 import com.revrobotics.CANSparkFlex;
 import com.revrobotics.CANSparkLowLevel;
@@ -18,6 +15,7 @@ import friarLib3.Utils.TalonUtil;
 
 public class IntakeIOTalonFX implements IntakeIO
 {
+    final DutyCycleOut IntakeRequest = new DutyCycleOut(0);
     private final TalonFX intakeMotor = new TalonFX(IntakeConstants.IntakeMotorID);
     final VelocityVoltage intakeRequest = new VelocityVoltage(0).withSlot(0);
     final MotionMagicVelocityVoltage motionMagicVelocityVoltage =

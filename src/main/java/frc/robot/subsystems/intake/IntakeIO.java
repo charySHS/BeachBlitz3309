@@ -1,5 +1,6 @@
 package frc.robot.subsystems.intake;
 
+import com.ctre.phoenix6.controls.DutyCycleOut;
 import com.revrobotics.CANSparkLowLevel;
 import org.littletonrobotics.junction.AutoLog;
 
@@ -42,6 +43,8 @@ public interface IntakeIO
     public default TalonFX getIntakeMotor() { return new TalonFX(0); }
 
     public default VoltageOut getIntakeVoltageRequest() { return new VoltageOut(0); }
+
+    public default DutyCycleOut getDutyCycleRequest() { return new DutyCycleOut(0); }
 
     public default CANSparkFlex getFeederMotor() { return new CANSparkFlex(0, CANSparkLowLevel.MotorType.kBrushless); }
 
