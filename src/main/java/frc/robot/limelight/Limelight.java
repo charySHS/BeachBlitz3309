@@ -1,10 +1,3 @@
-// Copyright (c) 2024 FRC 3309
-// https://github.com/Team3309
-//
-// Use of this source code is governed by a
-// license that can be found in the LICENSE file at
-// the root directory of this project.
-
 package frc.robot.limelight;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -28,7 +21,7 @@ public class Limelight {
     static boolean profileJSON = false;
 
     static final String sanitizeName(String name) {
-        if (name.isEmpty() || name == null) {
+        if (name.equals("") || name == null) {
             return "limelight";
         }
         return name;

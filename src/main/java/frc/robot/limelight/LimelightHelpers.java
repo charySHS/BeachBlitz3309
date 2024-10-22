@@ -1,7 +1,7 @@
 // Copyright (c) 2024 FRC 3309
 // https://github.com/Team3309
 //
-// Use of this source code is governed by a 
+// Use of this source code is governed by a
 // license that can be found in the LICENSE file at
 // the root directory of this project.
 
@@ -917,7 +917,7 @@ public class LimelightHelpers {
         entries[3] = roll;
         entries[4] = pitch;
         entries[5] = yaw;
-        setLimelightNTDoubleArray(limelightName, "camerapose_robot space_set", entries);
+        setLimelightNTDoubleArray(limelightName, "camerapose_robotspace_set", entries);
     }
 
     /////
